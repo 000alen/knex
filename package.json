@@ -146,9 +146,7 @@
     "tsd": "^0.28.1",
     "typescript": "5.0.4"
   },
-  "buildDependencies": [
-    "rimraf"
-  ],
+  "buildDependencies": ["rimraf"],
   "bin": {
     "knex": "./bin/cli.js"
   },
@@ -201,9 +199,7 @@
     }
   ],
   "browser": {
-    "./lib/migrations/migrate/Migrator.js": "./lib/util/noop.js",
     "./lib/bin/cli.js": "./lib/util/noop.js",
-    "./lib/migrations/seed/Seeder.js": "./lib/util/noop.js",
     "tedious": false,
     "mysql": false,
     "mysql2": false,
@@ -215,10 +211,7 @@
     "better-sqlite3": false,
     "oracledb": false
   },
-  "react-native": {
-    "./lib/migrate": "./lib/util/noop.js",
-    "./lib/seed": "./lib/util/noop.js"
-  },
+  "react-native": {},
   "files": [
     "bin/*",
     "lib/",
@@ -247,9 +240,7 @@
     "statements": 82,
     "functions": 83,
     "branches": 69,
-    "extension": [
-      ".js"
-    ],
+    "extension": [".js"],
     "exclude": [
       "lib/dialects/oracle",
       "lib/dialects/oracledb",
