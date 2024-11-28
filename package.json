@@ -1,5 +1,5 @@
 {
-  "name": "knex",
+  "name": "@000alen/knex",
   "version": "3.1.0",
   "description": "A batteries-included SQL query & schema builder for PostgresSQL, MySQL, CockroachDB, MSSQL and SQLite3",
   "main": "knex",
@@ -146,7 +146,9 @@
     "tsd": "^0.28.1",
     "typescript": "5.0.4"
   },
-  "buildDependencies": ["rimraf"],
+  "buildDependencies": [
+    "rimraf"
+  ],
   "bin": {
     "knex": "./bin/cli.js"
   },
@@ -240,7 +242,9 @@
     "statements": 82,
     "functions": 83,
     "branches": 69,
-    "extension": [".js"],
+    "extension": [
+      ".js"
+    ],
     "exclude": [
       "lib/dialects/oracle",
       "lib/dialects/oracledb",
